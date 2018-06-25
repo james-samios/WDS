@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -329,6 +330,81 @@ Aw
             </objects>
             <point key="canvasLocation" x="1047.5" y="338.5"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="oUZ-qz-voh">
+            <objects>
+                <viewController id="Sjx-OC-hhm" customClass="MapViewController" customModule="World_Domination" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="7CG-iV-0nT">
+                        <rect key="frame" x="0.0" y="0.0" width="900" height="550"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X0q-BV-Oxh">
+                                <rect key="frame" x="0.0" y="0.0" width="900" height="550"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X0q-BV-Oxh" secondAttribute="height" multiplier="18:11" id="27i-jF-RJP"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="WDSMap" id="CJB-U0-JOD"/>
+                            </imageView>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iDN-Cd-d0U">
+                                <rect key="frame" x="62" y="263" width="153" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="square" alternateTitle="sfsdfsdf" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="iYg-iZ-jba">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="srV-EB-Yie">
+                                <rect key="frame" x="353" y="334" width="74" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dnu-5H-hfp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A1d-oB-WaJ">
+                                <rect key="frame" x="426" y="351" width="74" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="6in-8f-nFP">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6zJ-SW-MT5">
+                                <rect key="frame" x="649" y="334" width="74" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Kmk-ol-c1M">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLW-Y4-if5">
+                                <rect key="frame" x="587" y="279" width="68" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="IVc-tD-jIb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fjp-Q6-ZTB">
+                                <rect key="frame" x="771" y="106" width="68" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="LWc-Cj-aLh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="X0q-BV-Oxh" firstAttribute="leading" secondItem="7CG-iV-0nT" secondAttribute="leading" id="2Uw-xb-vLp"/>
+                            <constraint firstAttribute="trailing" secondItem="X0q-BV-Oxh" secondAttribute="trailing" id="5hv-f7-T5T"/>
+                            <constraint firstItem="X0q-BV-Oxh" firstAttribute="top" secondItem="7CG-iV-0nT" secondAttribute="top" id="DCX-90-alG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="idr-aE-25R" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="-357"/>
+        </scene>
         <!--Main-->
         <scene sceneID="L2B-pt-DEH">
             <objects>
@@ -469,14 +545,14 @@ Aw
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHS-2J-0ux">
                                                                 <rect key="frame" x="48" y="16" width="273" height="25"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="LIMITED ITEMS AVAILABLE" drawsBackground="YES" id="fad-qD-duZ">
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="LIMITTED ITEMS AVAILABLE" drawsBackground="YES" id="fad-qD-duZ">
                                                                     <font key="font" size="20" name="HelveticaNeue-Medium"/>
                                                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                             </textField>
                                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pyp-z0-LTf">
-                                                                <rect key="frame" x="6" y="11" width="40" height="34"/>
+                                                                <rect key="frame" x="0.0" y="11" width="40" height="34"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="40" id="byW-Sp-J38"/>
                                                                     <constraint firstAttribute="height" constant="34" id="drz-yu-spd"/>
@@ -522,28 +598,35 @@ Aw
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="McI-ZQ-cLY">
-                                                                    <rect key="frame" x="-134" y="-32" width="626" height="299"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Sydney" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="OPu-eZ-gJm">
+                                                                <button translatesAutoresizingMaskIntoConstraints="NO" id="63W-Zk-OX4">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+                                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="AU" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="m2r-dw-XWV">
                                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
+                                                                    <connections>
+                                                                        <action selector="acionMap:" target="F7k-wy-cD6" id="wkf-45-4cI"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="63W-Zk-OX4" firstAttribute="top" secondItem="XvK-fI-ubl" secondAttribute="top" id="3Nn-rk-Dg2"/>
+                                                                <constraint firstAttribute="trailing" secondItem="63W-Zk-OX4" secondAttribute="trailing" id="J4k-7H-cES"/>
+                                                                <constraint firstAttribute="bottom" secondItem="63W-Zk-OX4" secondAttribute="bottom" id="cec-ju-RLj"/>
+                                                                <constraint firstItem="63W-Zk-OX4" firstAttribute="leading" secondItem="XvK-fI-ubl" secondAttribute="leading" id="ph4-QK-R3Q"/>
+                                                            </constraints>
                                                         </view>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="235" id="PfC-Tw-8QT"/>
                                                         </constraints>
                                                         <color key="borderColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="fillColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                     </box>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ot0-7W-W47">
                                                         <rect key="frame" x="0.0" y="20" width="375" height="35"/>
                                                         <subviews>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Ws-nf-hwS">
                                                                 <rect key="frame" x="18" y="5" width="211" height="25"/>
-                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CURRENT BALANCE: " id="xAo-YR-pE6">
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CURRENT BALANCE :" id="xAo-YR-pE6">
                                                                     <font key="font" size="20" name="HelveticaNeue-Medium"/>
                                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -618,6 +701,14 @@ Aw
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="717"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-ew-Sft">
+                                            <rect key="frame" x="97" y="517" width="180" height="180"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="180" id="sD3-xL-wpO"/>
+                                                <constraint firstAttribute="height" constant="180" id="zmM-k0-vqJ"/>
+                                            </constraints>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="QI1-nI-J8K"/>
+                                        </imageView>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="OC9-O7-hAy">
                                             <rect key="frame" x="20" y="474" width="334" height="35"/>
                                             <subviews>
@@ -748,14 +839,6 @@ Aw
                                                 <constraint firstItem="O1O-bY-Y83" firstAttribute="top" secondItem="x9f-hw-PD7" secondAttribute="bottom" constant="5" id="khS-g0-RSm"/>
                                             </constraints>
                                         </customView>
-                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-ew-Sft">
-                                            <rect key="frame" x="97" y="523" width="180" height="180"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="180" id="sD3-xL-wpO"/>
-                                                <constraint firstAttribute="height" constant="180" id="zmM-k0-vqJ"/>
-                                            </constraints>
-                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="QI1-nI-J8K"/>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Akd-ew-Sft" firstAttribute="centerX" secondItem="JQJ-RL-lON" secondAttribute="centerX" id="0G0-ZU-ppI"/>
@@ -831,6 +914,11 @@ Aw
                             <constraint firstItem="mDP-c6-9jc" firstAttribute="leading" secondItem="688-px-xOx" secondAttribute="trailing" constant="1" id="fTu-LW-Wh9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewMap" destination="63W-Zk-OX4" id="BQ3-C5-ANI"/>
+                        <outlet property="labelcurrentLocation" destination="IaJ-XU-TKp" id="6c8-ft-Ej3"/>
+                        <segue destination="Sjx-OC-hhm" kind="show" identifier="MapViewController" id="eA2-q4-gDe"/>
+                    </connections>
                 </viewController>
                 <customObject id="cjp-1q-VjW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -926,7 +1014,8 @@ Aw
         </scene>
     </scenes>
     <resources>
-        <image name="Sydney" width="239" height="168"/>
+        <image name="AU" width="194" height="151"/>
+        <image name="WDSMap" width="900" height="550"/>
         <image name="logo" width="420" height="420"/>
         <image name="warning" width="30" height="26"/>
     </resources>

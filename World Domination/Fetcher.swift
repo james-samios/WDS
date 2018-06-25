@@ -1,4 +1,3 @@
-
 import Foundation
 
 public enum HTTPMethod{
@@ -89,7 +88,7 @@ public final class Fetcher{
                             print("===============Error===================")
                             print("Error: \(error.localizedDescription)")
                             let stringValue = String(data: data, encoding: .utf8)
-                            print("Received data: \(String(describing: stringValue))")
+                            print("Received data: \(stringValue)")
                             print("===============End Error===================")
                             completion(error)
                         }
