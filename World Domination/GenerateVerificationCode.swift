@@ -12,7 +12,7 @@ public var email:String?{
 }
 
 class GenerateVerificationCode: NSViewController {
-    
+
     @IBOutlet weak var textFieldEmail: NSTextField!
     @IBOutlet weak var viewProgress: NSBox!
     @IBOutlet weak var activityIndicator: NSProgressIndicator!
@@ -22,7 +22,7 @@ class GenerateVerificationCode: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+
         
         // Do view setup here.
     }
@@ -35,11 +35,11 @@ class GenerateVerificationCode: NSViewController {
             self.dialogOKCancel(question: "Invalid Email", text: "Please enter a valid email address!")
             return
         }
-        
+
         
         var verficationCode = [1,2,3,4,5,6,7,8,9]
         verficationCode.shuffled()
-        
+       
         newCode = ""
         
         for (index,code) in verficationCode.enumerated(){
@@ -51,7 +51,7 @@ class GenerateVerificationCode: NSViewController {
         
         self.showProgress(true)
         
-        
+       
         
         let message  = SMTPMessage()
         message.from = "World Domination Simulator"
@@ -65,7 +65,7 @@ class GenerateVerificationCode: NSViewController {
         message.send({ (messg, now, total) in
             
         }, success: { (messg) in
-            
+        
             DispatchQueue.main.async {
                 self.view.window?.close()
             }
@@ -103,9 +103,9 @@ class GenerateVerificationCode: NSViewController {
             self.viewProgress.isHidden = !isShow
             self.textFieldEmail.isHidden = isShow
         }
-        
+
     }
     
-    
+   
     
 }

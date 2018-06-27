@@ -27,7 +27,7 @@ class ViewController: NSViewController {
         
     }
     
-    
+
     
     @IBAction func actionStartPlaying(_ sender: NSButton) {
         
@@ -39,15 +39,16 @@ class ViewController: NSViewController {
                 
                 Fetcher.getVerificationCode(email) { (result) in
                     
+                
                     print("code is: ",result)
                 }
-                
+
             }else{
                 self.dialogOKCancel(question: "Generate Game Code", text: "Please generate a game code using the button below.")
                 return
             }
         }
-        
+ 
         
         func checkNewCode(){
             
@@ -62,7 +63,7 @@ class ViewController: NSViewController {
         
         
         if self.verificationCode?.count == 6{
-            
+ 
             checkNewCode()
             
         }else{

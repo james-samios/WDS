@@ -1,3 +1,4 @@
+
 import Foundation
 
 public enum HTTPMethod{
@@ -70,7 +71,7 @@ public final class Fetcher{
             let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
                 
                 DispatchQueue.main.async(execute: {
-                    
+                   
                     guard error == nil else{
                         
                         completion(error?.localizedDescription ?? "Unexpected error occured!")

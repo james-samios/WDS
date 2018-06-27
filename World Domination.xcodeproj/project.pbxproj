@@ -21,6 +21,10 @@
 		3D665DDA20AA710100E59B21 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D665DD920AA710100E59B21 /* SettingsViewController.swift */; };
 		3DD9D77020AE6E0800AAEB06 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9D76F20AE6E0800AAEB06 /* Fetcher.swift */; };
 		9C0E0D6B20DF07AC00FF3714 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0E0D6A20DF07AC00FF3714 /* MapViewController.swift */; };
+		9C2CA60120E2E8DF00DECDDD /* ShowCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CA60020E2E8DE00DECDDD /* ShowCountryViewController.swift */; };
+		9C332DE720E3A80F003F1446 /* PurchaseItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C332DE420E3A80E003F1446 /* PurchaseItemsVC.swift */; };
+		9C332DE820E3A80F003F1446 /* KSTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C332DE520E3A80E003F1446 /* KSTableCellView.swift */; };
+		9C332DE920E3A80F003F1446 /* OpenOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C332DE620E3A80F003F1446 /* OpenOrdersVC.swift */; };
 		9CD6EAC020A2D15700459398 /* World_DominationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6EABF20A2D15700459398 /* World_DominationTests.swift */; };
 		9CD6EACB20A2D15700459398 /* World_DominationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6EACA20A2D15700459398 /* World_DominationUITests.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +74,10 @@
 		3D665DD920AA710100E59B21 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3DD9D76F20AE6E0800AAEB06 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
 		9C0E0D6A20DF07AC00FF3714 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9C2CA60020E2E8DE00DECDDD /* ShowCountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCountryViewController.swift; sourceTree = "<group>"; };
+		9C332DE420E3A80E003F1446 /* PurchaseItemsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseItemsVC.swift; sourceTree = "<group>"; };
+		9C332DE520E3A80E003F1446 /* KSTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTableCellView.swift; sourceTree = "<group>"; };
+		9C332DE620E3A80F003F1446 /* OpenOrdersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenOrdersVC.swift; sourceTree = "<group>"; };
 		9CD6EAA920A2D15400459398 /* World Domination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Domination.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD6EABB20A2D15700459398 /* World DominationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "World DominationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD6EABF20A2D15700459398 /* World_DominationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_DominationTests.swift; sourceTree = "<group>"; };
@@ -173,6 +181,10 @@
 		9CD6EAAB20A2D15400459398 /* World Domination */ = {
 			isa = PBXGroup;
 			children = (
+				9C332DE520E3A80E003F1446 /* KSTableCellView.swift */,
+				9C332DE620E3A80F003F1446 /* OpenOrdersVC.swift */,
+				9C332DE420E3A80E003F1446 /* PurchaseItemsVC.swift */,
+				9C2CA60020E2E8DE00DECDDD /* ShowCountryViewController.swift */,
 				3DD9D76F20AE6E0800AAEB06 /* Fetcher.swift */,
 				3D1AEA5C20A7C2EC0087E82E /* AppDelegate.swift */,
 				3D1AEA5920A7C2EC0087E82E /* Assets.xcassets */,
@@ -351,14 +363,18 @@
 			files = (
 				3DD9D77020AE6E0800AAEB06 /* Fetcher.swift in Sources */,
 				3D665DDA20AA710100E59B21 /* SettingsViewController.swift in Sources */,
+				9C332DE720E3A80F003F1446 /* PurchaseItemsVC.swift in Sources */,
+				9C2CA60120E2E8DF00DECDDD /* ShowCountryViewController.swift in Sources */,
 				3D30417F20B569800057803C /* Main.swift in Sources */,
 				9C0E0D6B20DF07AC00FF3714 /* MapViewController.swift in Sources */,
 				3D1AEA6820A7C2EC0087E82E /* AppDelegate.swift in Sources */,
+				9C332DE820E3A80F003F1446 /* KSTableCellView.swift in Sources */,
 				3D1AEA6720A7C2EC0087E82E /* ViewController.swift in Sources */,
 				3D1AEA6920A7C2EC0087E82E /* GenerateVerificationCode.swift in Sources */,
 				3D1AEA6320A7C2EC0087E82E /* SMTPMessage.m in Sources */,
 				3D30418120B57EED0057803C /* Button.swift in Sources */,
 				3D1AEA6420A7C2EC0087E82E /* Extensions.swift in Sources */,
+				9C332DE920E3A80F003F1446 /* OpenOrdersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

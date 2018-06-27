@@ -1,7 +1,7 @@
 import Cocoa
 import LocalAuthentication
 class SettingsViewController: NSViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
@@ -28,11 +28,11 @@ class SettingsViewController: NSViewController {
                         }
                         
                     } else {
-                        
+
                     }
                 }
             } else {
-                
+
             }
         } else {
             
